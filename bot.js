@@ -5,7 +5,7 @@ const config = require('./config.json')
 const command = require('./command')
 
 client.on('ready', () => {
-  console.log('The client is ready!')
+  console.log('Ready!')
 
   command(client, ['ping', 'test'], (message) => {
     message.channel.send('Pong!')
